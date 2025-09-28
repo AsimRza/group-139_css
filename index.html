@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/7d51fff106.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header-row">
+        <a href="" class="logo"
+          ><img
+            src="https://martex-tailwindcss.ibthemespro.com/images/logo-blue.png"
+        /></a>
+        <nav>
+          <ul class="navbar">
+            <li class="nav-item nav-item-dropdown">
+              <a href="#">About <i class="fa-solid fa-caret-down"></i></a>
+              <ul class="dropdown">
+                <li><a href="">Item 1</a></li>
+                <li><a href="">Item 2</a></li>
+                <li><a href="">Item 3</a></li>
+                <li><a href="">Item 4</a></li>
+                <li><a href="">Item 5</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a href="#">Features</a></li>
+            <li class="nav-item"><a href="#">Pages</a></li>
+            <li class="nav-item"><a href="#">Pricing</a></li>
+            <li class="nav-item"><a href="#">FAQ</a></li>
+          </ul>
+          <div class="header-btns">
+            <a href="" class="btn btn-ghost">Sign in</a>
+            <a href="" class="btn btn-primary">Sign up</a>
+          </div>
+        </nav>
+        <button class="header-nav-btn">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </header>
+
+    <div class="banner">
+      <div class="container">
+        <div class="banner-content">
+          <div class="banner-text">
+            <h1>Start with a plan and finish with results</h1>
+            <p>
+              Sodales tempor sapien quaerat ipsum congue and laoreet turpis
+              neque auctor turpis vitaer
+            </p>
+            <a class="btn btn-primary" href="#">Get started for free</a>
+            <ul>
+              <li>No credit card needed, free 14-day trial</li>
+              <li>No credit card needed, free 14-day trial</li>
+            </ul>
+          </div>
+
+          <img
+            src="https://martex-tailwindcss.ibthemespro.com/images/img-08.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+    <script>
+      const navBtn = document.querySelector(".header-nav-btn");
+      const headerRow = document.querySelector(".header");
+      navBtn.addEventListener("click", () => {
+        headerRow.classList.toggle("nav-open");
+        const icon = navBtn.querySelector("i");
+        if (headerRow.classList.contains("nav-open")) {
+          icon.classList.remove("fa-bars");
+          icon.classList.add("fa-xmark");
+        } else {
+          icon.classList.remove("fa-xmark");
+          icon.classList.add("fa-bars");
+        }
+      });
+    </script>
+  </body>
+</html>
