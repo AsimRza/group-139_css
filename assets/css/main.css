@@ -202,6 +202,41 @@ button {
   margin-bottom: 8px;
 }
 
+.project-numbers {
+  background: #f5f8ff;
+  padding: 60px 0;
+}
+
+.project-numbers-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.project-number-item {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0, 44, 109, 0.08);
+  text-align: center;
+  padding: 32px 24px;
+  flex: 1 1 200px;
+  min-width: 200px;
+}
+
+.project-number-item h2 {
+  font-size: 2.5rem;
+  color: #0052cc;
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+
+.project-number-item p {
+  font-size: 1.1rem;
+  color: #333;
+  margin: 0;
+}
+
 @media (max-width: 960px) {
   .container {
     width: 100%;
