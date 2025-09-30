@@ -368,3 +368,84 @@ button {
   margin: 0;
   font-weight: 600;
 }
+.container-1{
+    width: 1320px;
+    height: 272px;
+    margin: 70px auto;
+}
+.yazilar{
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+.yazilar h3{
+    width: 962px;
+    height: 144px;
+    color:#353F4F;
+    font-size: 57px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    margin: 0px auto;
+}
+
+.yazilar p{
+    font-size: 18px;
+    color:#757575;
+    font-family: "Rubik", sans-serif;
+    margin: 18px 0px 0px;
+}
+
+.sol-section,
+.sag-section{
+    width: 612px;
+    height: 520px;
+    background-color: #F8F9FE;
+    border-radius: 12px;
+    padding:55px;
+}
+
+.section-all img{
+    width: 461px;
+    height: 307px;
+}
+
+.section-all{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.sol-section h4,
+.sag-section h4{
+    width: 512px;
+    height: 40px;
+    color: #353F4F;
+    font-size: 30px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    margin:0px 0px 15px;
+    text-align: center;
+}
+
+.sol-section h4{
+    padding-bottom: 16px;
+}
+
+.sag-section h4{
+    padding:25px;
+}
+.sag-section p{
+    padding: 20px;
+}
+
+.sol-section img{
+    padding-top: 16px;
+}
+
+.sol-section p,
+.sag-section p{
+    width: 512px;
+    height: 61px;
+    color:#6C757D;
+    font-size: 18px;
+    font-family: "Rubik", sans-serif;
+    text-align: center;
+}
