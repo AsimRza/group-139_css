@@ -236,6 +236,63 @@ button {
   margin: 0;
 }
 
+.workflow {
+  /* text-align: center; */
+  padding: 40px 0;
+}
+
+.workflow h2 {
+  color: var(--black-800);
+  font-size: var(--font-size-2xl);
+  font-weight: 700;
+  text-align: center;
+}
+
+.workflow p {
+  font-size: var(--font-size-md);
+  color: var(--black-300);
+  line-height: 1.6;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.workflowimgtext {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.workflowimgtext > img {
+  width: 45%;
+}
+
+.workflow-text {
+  /* border: 1px solid red; */
+  padding: 90px 40px 0 40px;
+}
+
+.workflow-text > p,
+.workflow-text ul {
+  font-size: var(--font-size-sm);
+  color: var(--black-300);
+  line-height: 1.6;
+  text-align: left;
+}
+
+.workflow-text ul {
+  padding-left: 15px;
+  list-style: disc;
+}
+.workflow-text li {
+  margin-bottom: 20px;
+}
+.workflow-text > h5 {
+  font-size: var(--font-size-lg);
+  color: var(--black-800);
+}
+
+/* Responsible */
+
 @media (max-width: 960px) {
   .container {
     width: 100%;
@@ -313,9 +370,29 @@ button {
   .banner-content img {
     width: 90%;
   }
+
+  .workflow h2 {
+    font-size: var(--font-size-xl);
+  }
+
+  .workflow p {
+    font-size: var(--font-size-sm);
+  }
+
+  .workflowimgtext > img {
+    width: 43%;
+    height: 80%;
+    margin-top: 80px;
+  }
+
+  .workflow-text {
+    padding: 20px 30px;
+  }
 }
 
-@media (max-width: 600px) {
+
+
+@media (max-width: 762px) {
   :root {
     --header-slider-width: 200px;
   }
@@ -326,6 +403,30 @@ button {
   .banner-content {
     padding: 20px;
   }
+
+    .workflow h2 {
+    font-size: var(--font-size-xl);
+  }
+
+  .workflow p {
+    font-size: var(--font-size-md);
+  }
+    .workflowimgtext img {
+      width: 80%;
+      margin-left: 40px;
+    }
+    .workflow {
+      width: 100%;
+     
+    }
+    .workflowimgtext {
+      flex-wrap: wrap;
+    }
+
+    .workflow-text {
+      padding: 20px 80px;
+    }
+
 }
 
 .project-numbers {
