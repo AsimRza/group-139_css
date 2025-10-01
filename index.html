@@ -10,7 +10,10 @@
       href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
       rel="stylesheet"
     />
-
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
     <script
       src="https://kit.fontawesome.com/7d51fff106.js"
       crossorigin="anonymous"
@@ -97,6 +100,155 @@
         </div>
       </div>
     </section>
+
+    <main>
+      <section class="build__marketingstrategy">
+        <div class="container">
+          <div class="build__marketingstrategy-content">
+            <div class="build__marketingstrategy-title">
+              <h2>
+                Build a customer-centric <br />
+                marketing strategy
+              </h2>
+              <p>
+                Aliquam a augue suscipit luctus neque purus ipsum neque diam
+                dolor primis libero <br />
+                tempus, blandit and cursus varius and magnis sodales
+              </p>
+            </div>
+            <div class="build__marketingstrategy-img">
+              <img src="/assets/images/tablet-01.png" alt="tablet photo" />
+              <button data-micromodal-trigger="modal-1" class="video__btn">
+                <i class="fa-solid fa-play"></i>
+              </button>
+              <div class="modal" id="modal-1" aria-hidden="true">
+                <div tabindex="-1" data-micromodal-close>
+                  <div
+                    role="dialog"
+                    aria-modal="true"
+                    aria-labelledby="modal-1-title"
+                    class="modal2"
+                  >
+                    <button
+                      aria-label="Close modal"
+                      data-micromodal-close
+                      class="btn__close"
+                    >
+                      <i class="fa-solid fa-xmark"></i>
+                    </button>
+
+                    <div id="modal-1-content">
+                      <iframe
+                        width="100%"
+                        height="100%"
+                        src="https://www.youtube.com/embed/SZEflIVnhH8?si=K1QjGxurjgSCqWgR"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen
+                      ></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Brands Carousel -->
+      <section class="Brands">
+        <div class="container">
+          <div class="brands__carousel">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="#"
+                    ><img
+                      src="https://martex-tailwindcss.ibthemespro.com/images/brand-5.png"
+                      alt=""
+                  /></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#"
+                    ><img
+                      src="https://martex-tailwindcss.ibthemespro.com/images/brand-6.png"
+                      alt=""
+                  /></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#"
+                    ><img
+                      src="https://martex-tailwindcss.ibthemespro.com/images/brand-7.png"
+                      alt=""
+                  /></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#"
+                    ><img
+                      src="https://martex-tailwindcss.ibthemespro.com/images/brand-8.png"
+                      alt=""
+                  /></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#"
+                    ><img
+                      src="https://martex-tailwindcss.ibthemespro.com/images/brand-9.png"
+                      alt=""
+                  /></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#"
+                    ><img
+                      src="https://martex-tailwindcss.ibthemespro.com/images/brand-1.png"
+                      alt=""
+                  /></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#"
+                    ><img
+                      src="https://martex-tailwindcss.ibthemespro.com/images/brand-2.png"
+                      alt=""
+                  /></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#"
+                    ><img
+                      src="https://martex-tailwindcss.ibthemespro.com/images/brand-4.png"
+                      alt=""
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Build a customer-centric marketing strategy section Modal script -->
+    <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
+    <script>
+      MicroModal.init();
+    </script>
+    <!-- End of modal -->
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".brands__carousel .mySwiper", {
+        slidesPerView: 6,
+        spaceBetween: 30,
+        loop: true,
+        centeredSlides: true,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+          pauseOnMouseEnter: true,
+        },
+        speed: 1000,
+      });
+    </script>
     <script>
       const navBtn = document.querySelector(".header-nav-btn");
       const headerRow = document.querySelector(".header");
