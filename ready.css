@@ -1,0 +1,128 @@
+:root {
+  --blue-700: #1859bc;
+  --blue-500: #1680fb;
+  --black-800: #353f4f;
+  --black-300: rgb(108, 117, 125);
+  --white-500: #f4f4f9;
+  --cryan: #f6f4fd;
+  --font-size-4xl: 3.875rem;
+  --font-size-3xl: 3.6125rem;
+  --font-size-2xl: 3.3235rem;
+  --font-size-xl: 1.734rem;
+  --font-size-lg: 1.431rem;
+  --font-size-md: 1.181rem;
+  --font-size-sm: 1rem;
+  --header-slider-width: 301px;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  max-width: 1200px;
+  margin: 0px auto;
+  padding-inline: 16px;
+  height: 100%;
+}
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul {
+  list-style: none;
+}
+button {
+  border: none;
+}
+.ready {
+  margin-top: 60px;
+  background-image: url(https://martex-tailwindcss.ibthemespro.com/images/bg-05.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  border-radius: 20px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding-block: 80px;
+}
+.ready .ready_get {
+  text-align: center;
+ 
+}
+.ready .ready_get h2 {
+  font-size: var(--font-size-2xl);
+  font-family: 700;
+}
+.ready .ready_get p {
+  margin-block: 30px;
+  font-size: var(--font-size-lg);
+  font-weight: 500;
+} 
+.ready .ready_get a {
+  background-color: var(--blue-500);
+  border: 2px solid var(--blue-500);
+  padding: 12px 24px;
+  border-radius: 3px;
+  font-size: var(--font-size-md);
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.4s;
+  display: inline-block;
+}
+.ready .ready_get a:hover {
+  background-color: var(--blue-700);
+  border: 2px solid white;
+}
+.ready .ready_get ul {
+  display: inline-block;
+  list-style-image: url("./image/check.png");
+  font-size: var(--font-size-md);
+  font-weight: 500;
+  margin-top: 20px;
+}
+@media (max-width: 988px) {
+  html {
+    font-size: 0.5rem;
+  }
+  .container {
+    width: 700px;
+    overflow: hidden;
+    padding-block: 50px;
+  }
+  .ready_get p {
+    font-size: 1.9rem !important;
+  }
+  .ready_get a {
+    font-size: 1.9rem !important;
+  }
+  .ready_get ul {
+    font-size: 1.7rem !important;
+  }
+}
+@media (max-width: 768px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html {
+    font-size: 0.6rem;
+  }
+  .container {
+    width: 100%;
+    overflow: hidden;
+  }
+  .ready {
+    border-radius: 0;
+ 
+  }
+  .ready_get h2 {
+    font-size: 3.5rem !important;
+  }
+}
