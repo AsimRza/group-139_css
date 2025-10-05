@@ -19,8 +19,8 @@
   padding: 0;
   box-sizing: border-box;
 }
-.container {
-  max-width: 1200px;
+.container1 {
+  max-width: 1320px;
   margin: 0px auto;
   padding-inline: 16px;
   height: 100%;
@@ -86,12 +86,19 @@ button {
   font-weight: 500;
   margin-top: 20px;
 }
+@media (max-width: 1096px) {
+  .container1 {
+    width: 960px;
+    overflow: hidden;
+    padding-block: 50px;
+  }
+}
 @media (max-width: 988px) {
   html {
     font-size: 0.5rem;
   }
-  .container {
-    width: 700px;
+  .container1 {
+    width: 720px;
     overflow: hidden;
     padding-block: 50px;
   }
@@ -114,7 +121,7 @@ button {
   html {
     font-size: 0.6rem;
   }
-  .container {
+  .container1 {
     width: 100%;
     overflow: hidden;
   }
@@ -125,4 +132,30 @@ button {
   .ready_get h2 {
     font-size: 3.5rem !important;
   }
+}
+
+.row img {
+  width: 150px;
+}
+.row .hover_list ul li  a {
+  transition: all 0.5s linear;
+}
+.row .hover_list ul li a:hover {
+  color: #353f4f !important;
+}
+.input1{
+    position: relative;
+}
+.row  .col3_span i {
+  position: absolute;
+  right: 10px;
+  top: 18px;
+  justify-content: space-between;
+}
+.row .martex_icon i{
+  color: #899197;
+    transition: all 0.5s linear;
+}
+.row .martex_icon i:hover{
+  color: #353F4F;
 }
