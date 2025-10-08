@@ -8,6 +8,7 @@
   --font-size-4xl: 3.875rem;
   --font-size-3xl: 3.6125rem;
   --font-size-2xl: 3.3235rem;
+  --font-size-xl-2: 2.875rem;
   --font-size-xl: 1.734rem;
   --font-size-lg: 1.431rem;
   --font-size-md: 1.181rem;
@@ -236,6 +237,197 @@ button {
   margin: 0;
 }
 
+.project-numbers {
+  background: linear-gradient(90deg, #e3f0ff 0%, #f6f4fd 100%);
+  padding: 48px 0;
+}
+
+.project-numbers-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 32px;
+}
+
+.project-number-item {
+  background: #fff;
+  border: 2px solid #e0e7ff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(22, 128, 251, 0.07);
+  text-align: center;
+  padding: 28px 16px;
+  transition: transform 0.2s;
+}
+
+.project-number-item:hover {
+  transform: translateY(-8px) scale(1.04);
+  border-color: #1680fb;
+}
+
+.project-number-item h2 {
+  font-size: 2.2rem;
+  color: var(--blue-500);
+  margin-bottom: 10px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.project-number-item p {
+  font-size: 1rem;
+  color: var(--black-300);
+  margin: 0;
+  font-weight: 600;
+}
+
+/* Our Happy Customers section */
+
+.happycustomers {
+  padding: 100px 0px;
+  background-color: #f6f6fa;
+}
+
+.happycustomers__title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 70px;
+}
+
+.happycustomers__title h2 {
+  line-height: 1.25;
+  font-size: var(--font-size-3xl);
+  color: var(--black-800);
+  font-weight: 700;
+}
+
+.happycustomers__title p {
+  margin-top: 18px;
+  font-size: var(--font-size-lg);
+  color: var(--black-300);
+  font-weight: 500;
+  line-height: 1.6666;
+}
+
+/* Our Happy Customers swiper */
+
+.happycustomers__content .swiper {
+  width: 100%;
+  height: 100%;
+  padding: 40px 40px 70px !important;
+  /* cursor: grab; */
+}
+
+.happycustomers__content .swiper-slide {
+  background: #444;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 40px 30px;
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  box-shadow: 0 0 12px 3px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+}
+
+.happycustomers__content .swiper-slide p {
+  font-size: var(--font-size-md);
+  color: var(--black-300) !important;
+  font-weight: 400;
+}
+
+/* .swiper-slide::before {
+  content: "";
+  -webkit-mask: url(https://www.svgrepo.com/show/346784/double-quotes-l.svg)
+    no-repeat center;
+  -webkit-mask-size: cover;
+  mask: url(https://www.svgrepo.com/show/346784/double-quotes-l.svg) no-repeat
+    center;
+  mask-size: cover;
+  background-color: #f0f1f2;
+  position: absolute;
+  top: 22px;
+  left: 32px;
+  width: 60px;
+  height: 40px;
+  z-index: -1 !important;
+} */
+
+.doublequoteicon {
+  object-fit: cover;
+  position: absolute;
+  top: 2px;
+  left: 32px;
+  width: 75px !important;
+  height: 75px !important;
+  filter: brightness(0) saturate(100%) invert(100%) sepia(86%) saturate(531%)
+    hue-rotate(179deg) brightness(103%) contrast(90%);
+  z-index: -1 !important;
+}
+
+.happycustomers__content .swiper-slide img {
+  display: block;
+  width: 54px;
+  height: 54px;
+  object-fit: cover;
+}
+
+.customer__photo {
+  display: flex;
+  align-items: center;
+  margin-top: 22px;
+  column-gap: 15px;
+}
+
+.customer__photo img {
+  border-radius: 50%;
+}
+
+.customer__name {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.customer__name h6 {
+  font-size: 18px !important;
+  font-weight: 700;
+  color: var(--black-800);
+}
+.customer__name p {
+  font-size: var(--font-size-sm) !important;
+  color: var(--black-300);
+}
+
+/* End of Our Happy Customers section */
+
+/* Responsive */
+
+@media (max-width: 1200px) {
+  .container {
+    width: 100%;
+  }
+
+  .happycustomers__title h2 {
+    font-size: var(--font-size-xl-2);
+  }
+  .happycustomers__title p {
+    font-size: var(--font-size-md);
+  }
+
+  .happycustomers__content .swiper{
+    width: 90%;
+  }
+
+  .happycustomers__content .swiper-slide p{
+    font-size: var(--font-size-sm);
+  }
+  .customer__name h6 {
+  font-size: var(--font-size-sm) !important;
+}
+.customer__name p {
+  font-size: 15px !important;
+}
+}
+
 @media (max-width: 960px) {
   .container {
     width: 100%;
@@ -313,7 +505,18 @@ button {
   .banner-content img {
     width: 90%;
   }
+  .happycustomers__title h2 {
+    font-size: 38px;
+  }
+  .happycustomers__title p {
+    font-size: var(--font-size-md);
+  }
+  .happycustomers__title{
+    margin-bottom: 30px;
+  }
 }
+
+
 
 @media (max-width: 600px) {
   :root {
@@ -326,45 +529,10 @@ button {
   .banner-content {
     padding: 20px;
   }
-}
-
-.project-numbers {
-  background: linear-gradient(90deg, #e3f0ff 0%, #f6f4fd 100%);
-  padding: 48px 0;
-}
-
-.project-numbers-row {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 32px;
-}
-
-.project-number-item {
-  background: #fff;
-  border: 2px solid #e0e7ff;
-  border-radius: 12px;
-  box-shadow: 0 2px 12px rgba(22, 128, 251, 0.07);
-  text-align: center;
-  padding: 28px 16px;
-  transition: transform 0.2s;
-}
-
-.project-number-item:hover {
-  transform: translateY(-8px) scale(1.04);
-  border-color: #1680fb;
-}
-
-.project-number-item h2 {
-  font-size: 2.2rem;
-  color: var(--blue-500);
-  margin-bottom: 10px;
-  font-weight: 800;
-  letter-spacing: 2px;
-}
-
-.project-number-item p {
-  font-size: 1rem;
-  color: var(--black-300);
-  margin: 0;
-  font-weight: 600;
+  .happycustomers__title h2 {
+    font-size: 35px;
+  }
+  .happycustomers__title p {
+    font-size: var(--font-size-sm);
+  }
 }
